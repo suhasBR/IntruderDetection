@@ -1,0 +1,15 @@
+function value = histo(img,n)
+%This function outputs the value of the histogram of a particular value
+value=0;
+a=size(img);
+for i=1:a(1)
+    for j=1:a(2)
+        if(img(i,j)==n)
+            value=value+1;
+        end
+    end
+end
+
+
+
+end

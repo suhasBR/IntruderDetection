@@ -1,0 +1,16 @@
+clc;
+clear;
+closeall;
+suhas=selfstudy2;   %creating object of the class selfstudy2
+
+suhas.backGround_image=suhas.setBackgnd();
+% imshow(suhas.backGround_image);
+
+pause(0.2);
+
+while(1)
+si=imread(suhas.url);
+suhas.compare_img(si,suhas.backGround_image);
+
+end
+
